@@ -1,0 +1,22 @@
+
+html {
+  &[data-theme="light"] {
+    --app-body-background: var(--global-alto-color);
+    --app-aside-color: var(--global-white-color);
+    --app-icon-color: var(--global-black-color);
+    --app-link-color: var(--app-icon-color);
+    --app-link-color-bg: var(--global-monza-color);
+    --app-global-color-text: var(--global-mine-shaft-color);
+  }
+  &[data-theme="dark"] {
+    --app-body-background: var(--global-black-color);
+    --app-aside-color: var(--global-black-color);
+  }
+}
+
+body {
+  background-color: var(--app-body-background);
+  font-family: var(--fonts-poppins);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

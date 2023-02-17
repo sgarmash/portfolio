@@ -1,0 +1,20 @@
+.aside {
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--sidebar-width-open);
+  background-color: var(--app-aside-color);
+  transition-property: width;
+  transition-duration: var(--global-animation-duration);
+  transition-timing-function: var(--global-animation-function);
+  &.aside-collapse {
+    width: var(--sidebar-width-statick);
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}

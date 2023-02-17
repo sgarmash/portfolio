@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  padding: 0 18px;
+  color: var(--app-aside-color);
+  background-color: var(--app-link-color-bg);
+  font-size: 13px;
+}
+
+.wrapper__logo {
+  width: 100%;
+  flex-grow: 1;
+}

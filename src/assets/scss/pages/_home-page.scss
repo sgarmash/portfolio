@@ -1,0 +1,15 @@
+.about {
+
+  &__date {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    color: var(--app-global-color-text);
+    border-bottom: 2px solid var(--app-link-color-bg);
+  }
+
+  &__description {
+    flex-grow: 1;
+  }
+
+}
