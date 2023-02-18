@@ -1,0 +1,50 @@
+.collapse {
+  .aside.aside-collapse & {
+    &__aside {
+      .icon__theme {
+        transform: rotate(0);
+      }
+    }
+    &__text {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &__aside {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border: 0;
+    border-top: 1px solid #dbdbdb;
+    white-space: nowrap;
+    transition-property: background-color, color;
+    transition-duration: var(--global-animation-duration);
+    transition-timing-function: var(--global-animation-function);
+    outline: transparent;
+    .icon__theme {
+      transition-property: transform;
+      transition-duration: var(--global-animation-duration);
+      transition-timing-function: var(--global-animation-function);
+      transform: rotate(-180deg);
+    }
+    &:hover, &:focus {
+      color: var(--app-aside-color);
+      background-color: var(--app-link-color-bg);
+    }
+  }
+  &__text {
+    padding-left: 10px;
+    flex-shrink: 0;
+    line-height: calc(30 / 13);
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity, visibility;
+    transition-duration: var(--global-animation-duration);
+    transition-timing-function: var(--global-animation-function);
+  }
+}
